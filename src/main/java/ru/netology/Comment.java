@@ -5,9 +5,9 @@ import java.util.Date;
 import java.util.Timer;
 
 public class Comment {
-    long commentID;
-    long commentAutorID;
-    long parentCommentID;
-    String textComment;
-    Timestamp timeOfComment;
+    private long commentID;
+    private long commentAutorID;
+    private long parentCommentID;
+    private String textComment;
+    private Timestamp timeOfComment;
 }

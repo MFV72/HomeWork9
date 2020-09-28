@@ -1,6 +1,6 @@
 package ru.netology;
 
 public class DropDownMenu {
-    long menuID;
+    private long menuID;
 
 }

@@ -1,6 +1,6 @@
 package ru.netology;
 
 public class Like {
-    long parentID;
-    long likeAutorID;
+    private long parentID;
+    private long likeAutorID;
 }

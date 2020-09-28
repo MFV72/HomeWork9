@@ -1,16 +1,8 @@
 package ru.netology;
 
 public class Views {
-    private long parentPostID;
     private long userID; //автор репоста
-
-    public long getParentPostID() {
-        return parentPostID;
-    }
-
-    public void setParentPostID(long parentPostID) {
-        this.parentPostID = parentPostID;
-    }
+    private long count;
 
     public long getUserID() {
         return userID;
@@ -19,4 +11,13 @@ public class Views {
     public void setUserID(long userID) {
         this.userID = userID;
     }
+
+    public long getCount() {
+        return count;
+    }
+
+    public void setCount(long count) {
+        this.count = count;
+    }
+
 }

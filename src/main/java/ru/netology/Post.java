@@ -7,13 +7,15 @@ public class Post {
     private long postAuthorID; //* автор
     private long groupID; // в чьей группе пост
     private long adminID; //* ID администратора, разместившего запись
-    private Logo logo;
     private String headerCaption;
     private Date dateOfPost;
-    private DropDownMenu menu;
     private String textPost;
     private long replyAuthorID;
     private long replyPostID;
+    private Views views;
+    private Repost repost;
+    private Like Like;
+    private Comment Comment;
 
     public long getPostID() {
         return postID;
@@ -47,14 +49,6 @@ public class Post {
         this.adminID = adminID;
     }
 
-    public Logo getLogo() {
-        return logo;
-    }
-
-    public void setLogo(Logo logo) {
-        this.logo = logo;
-    }
-
     public String getHeaderCaption() {
         return headerCaption;
     }
@@ -69,14 +63,6 @@ public class Post {
 
     public void setDateOfPost(Date dateOfPost) {
         this.dateOfPost = dateOfPost;
-    }
-
-    public DropDownMenu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(DropDownMenu menu) {
-        this.menu = menu;
     }
 
     public String getTextPost() {
@@ -101,5 +87,37 @@ public class Post {
 
     public void setReplyPostID(long replyPostID) {
         this.replyPostID = replyPostID;
+    }
+
+    public Views getViews() {
+        return views;
+    }
+
+    public void setViews(Views views) {
+        this.views = views;
+    }
+
+    public Repost getRepost() {
+        return repost;
+    }
+
+    public void setRepost(Repost repost) {
+        this.repost = repost;
+    }
+
+    public ru.netology.Like getLike() {
+        return Like;
+    }
+
+    public void setLike(ru.netology.Like like) {
+        Like = like;
+    }
+
+    public ru.netology.Comment getComment() {
+        return Comment;
+    }
+
+    public void setComment(ru.netology.Comment comment) {
+        Comment = comment;
     }
 }

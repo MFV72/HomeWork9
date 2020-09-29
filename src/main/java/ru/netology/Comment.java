@@ -9,15 +9,7 @@ public class Comment {
     private long commentAutorID;
     private long parentCommentID;
     private String textComment;
-    private Timestamp timeOfComment;
-
-    public Timestamp getTimeOfComment() {
-        return timeOfComment;
-    }
-
-    public void setTimeOfComment(Timestamp timeOfComment) {
-        this.timeOfComment = timeOfComment;
-    }
+    private long count;
 
     public String getTextComment() {
         return textComment;
@@ -49,5 +41,13 @@ public class Comment {
 
     public void setCommentID(long commentID) {
         this.commentID = commentID;
+    }
+
+    public long getCount() {
+        return count;
+    }
+
+    public void setCount(long count) {
+        this.count = count;
     }
 }

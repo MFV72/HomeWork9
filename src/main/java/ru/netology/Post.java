@@ -7,13 +7,14 @@ public class Post {
     private long postAuthorID; //* автор
     private long groupID; // в чьей группе пост
     private long adminID; //* ID администратора, разместившего запись
-    private Logo logo;
     private String headerCaption;
     private Date dateOfPost;
-    private DropDownMenu menu;
     private String textPost;
     private long replyAuthorID;
     private long replyPostID;
+    private Comment comment;
+    private Like like;
+    private Views view;
 
     public long getPostID() {
         return postID;
@@ -47,14 +48,6 @@ public class Post {
         this.adminID = adminID;
     }
 
-    public Logo getLogo() {
-        return logo;
-    }
-
-    public void setLogo(Logo logo) {
-        this.logo = logo;
-    }
-
     public String getHeaderCaption() {
         return headerCaption;
     }
@@ -69,14 +62,6 @@ public class Post {
 
     public void setDateOfPost(Date dateOfPost) {
         this.dateOfPost = dateOfPost;
-    }
-
-    public DropDownMenu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(DropDownMenu menu) {
-        this.menu = menu;
     }
 
     public String getTextPost() {
@@ -101,5 +86,29 @@ public class Post {
 
     public void setReplyPostID(long replyPostID) {
         this.replyPostID = replyPostID;
+    }
+
+    public Comment getComment() {
+        return comment;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
+
+    public Like getLike() {
+        return like;
+    }
+
+    public void setLike(Like like) {
+        this.like = like;
+    }
+
+    public Views getView() {
+        return view;
+    }
+
+    public void setView(Views view) {
+        this.view = view;
     }
 }
